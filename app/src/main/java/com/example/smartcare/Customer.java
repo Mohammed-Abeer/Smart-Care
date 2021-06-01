@@ -1,13 +1,15 @@
 package com.example.smartcare;
 
-public class Manager {
-    public String name,email,code,phone;
-    public Manager(){
+public class Customer {
+    public String name,email,address,phone;
+    public Customer(){
 
     }
-    public Manager(String name, String email, String phone){
+
+    public Customer(String name, String email, String address, String phone) {
         this.name = name;
         this.email = email;
+        this.address = address;
         this.phone = phone;
     }
 
@@ -27,12 +29,12 @@ public class Manager {
         this.email = email;
     }
 
-    public String getCode() {
-        return code;
+    public String getAddress() {
+        return address;
     }
 
-    public void setCode(String code) {
-        this.code = code;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     public String getPhone() {
@@ -42,5 +44,4 @@ public class Manager {
     public void setPhone(String phone) {
         this.phone = phone;
     }
-
 }

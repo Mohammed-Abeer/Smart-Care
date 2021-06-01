@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1074836380712",
+    "firebase_url": "https://smart-care-d33c5-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "smart-care-d33c5",
+    "storage_bucket": "smart-care-d33c5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1074836380712:android:f3158f4e03a02f0860e91d",
+        "android_client_info": {
+          "package_name": "com.example.smartcare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1074836380712-63crgbtnldkifl8g1e0tmqg791o80c3e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBA2Dz2nl9mJ_fOqjJQQCyMbDp9zmB-a6o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1074836380712-63crgbtnldkifl8g1e0tmqg791o80c3e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
