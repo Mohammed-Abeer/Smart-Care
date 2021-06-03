@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp">
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+
+            android:textSize="25dp"
+            android:text="Name" />
+
+        <EditText
+            android:id="@+id/Name"
+            android:layout_below="@id/textViewName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="25dp"
+
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:hint="child name" />
+
+        <TextView
+            android:id="@+id/textViewAge"
+            android:layout_below="@id/Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+
+
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+
+            android:textSize="25dp"
+            android:text="Age" />
+
+        <EditText
+            android:id="@+id/Age"
+            android:layout_below="@id/textViewAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="25dp"
+
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:hint="Age" />
+
+        <TextView
+            android:id="@+id/textViewNote"
+            android:layout_below="@id/Age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+
+
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+
+            android:textSize="25dp"
+            android:text="Note" />
+
+        <EditText
+            android:id="@+id/Note"
+            android:layout_below="@id/textViewNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="25dp"
+
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:hint="Any important Note" />
+    </RelativeLayout>
+
+</RelativeLayout>
