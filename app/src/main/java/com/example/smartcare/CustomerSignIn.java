@@ -77,7 +77,7 @@ public class CustomerSignIn extends AppCompatActivity implements View.OnClickLis
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
                     //direct to dashboard
-                    startActivity(new Intent(CustomerSignIn.this,Dashboard.class));
+                    startActivity(new Intent(CustomerSignIn.this,CustomerDashboard.class));
 
 
                 }else {
