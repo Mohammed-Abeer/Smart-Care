@@ -1,4 +1,4 @@
-package com.example.smartcare.task.Adapter;
+package com.example.smartcare.Adapter;
 import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -20,10 +20,10 @@ import com.example.justforfrontend.taskActivity;
 import com.example.justforfrontend.util.DatabaseHandler;
 */
 import com.example.smartcare.R;
-import com.example.smartcare.task.AddNewTask;
-import com.example.smartcare.task.Model.ToDoModel;
-import com.example.smartcare.task.taskActivity;
-import com.example.smartcare.task.util.DatabaseHandler;
+import com.example.smartcare.AddNewTask;
+import com.example.smartcare.Model.ToDoModel;
+import com.example.smartcare.taskActivity;
+import com.example.smartcare.util.DatabaseHandler;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.example.smartcare.task;
+package com.example.smartcare;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
@@ -11,9 +11,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 
 import com.example.smartcare.R;
-import com.example.smartcare.task.Adapter.ToDoAdapter;
-import com.example.smartcare.task.Model.ToDoModel;
-import com.example.smartcare.task.util.DatabaseHandler;
+import com.example.smartcare.Adapter.ToDoAdapter;
+import com.example.smartcare.Model.ToDoModel;
+import com.example.smartcare.util.DatabaseHandler;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.Collections;

@@ -1,4 +1,4 @@
-package com.example.smartcare.task.Model;
+package com.example.smartcare.Model;
 
 import java.sql.Time;
 

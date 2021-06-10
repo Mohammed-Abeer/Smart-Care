@@ -7,6 +7,8 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.smartcare.taskActivity;
+
 public class AddChild extends AppCompatActivity {
 
     @Override
@@ -18,7 +20,7 @@ public class AddChild extends AppCompatActivity {
         addChild.setOnClickListener(new View.OnClickListener() {
                                          @Override
                                          public void onClick(View v) {
-                                             startActivity(new Intent(AddChild.this, Dashboard.class));
+                                             startActivity(new Intent(AddChild.this, taskActivity.class));
                                          }
                                      }
         );

@@ -1,4 +1,4 @@
-package com.example.smartcare.task.util;
+package com.example.smartcare.util;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -6,7 +6,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 
-import com.example.smartcare.task.Model.ToDoModel;
+import com.example.smartcare.Model.ToDoModel;
 
 import java.util.ArrayList;
 import java.util.List;

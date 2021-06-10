@@ -15,6 +15,9 @@
         <activity android:name=".CustomerSignIn" />
         <activity android:name=".CustomerSignUp" />
         <activity android:name=".AddChild" />
+        
+        <activity android:name=".taskActivity" />
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,4 +1,4 @@
-package com.example.smartcare.task;
+package com.example.smartcare;
 
 import android.content.DialogInterface;
 import android.graphics.Canvas;
@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.smartcare.R;
-import com.example.smartcare.task.Adapter.ToDoAdapter;
+import com.example.smartcare.Adapter.ToDoAdapter;
 
 
 public class RecyclerItemTouchHelper extends ItemTouchHelper.SimpleCallback {
@@ -68,9 +68,12 @@ public class RecyclerItemTouchHelper extends ItemTouchHelper.SimpleCallback {
 
         View itemView = viewHolder.itemView;
         int backgroundCornerOffset = 20;
-
+    }
+}
+    /*
         if (dX > 0) {
-            icon = ContextCompat.getDrawable(adapter.getContext(), R.drawable.ic_baseline_edit);
+
+            icon = ContextCompat.getDrawable(adapter.getContext(), R.drawable.ic_baseline_delete);
             background = new ColorDrawable(ContextCompat.getColor(adapter.getContext(), R.color.colorPrimaryDark));
         } else {
             icon = ContextCompat.getDrawable(adapter.getContext(), R.drawable.ic_baseline_delete);
@@ -78,6 +81,7 @@ public class RecyclerItemTouchHelper extends ItemTouchHelper.SimpleCallback {
         }
 
         assert icon != null;
+
         int iconMargin = (itemView.getHeight() - icon.getIntrinsicHeight()) / 2;
         int iconTop = itemView.getTop() + (itemView.getHeight() - icon.getIntrinsicHeight()) / 2;
         int iconBottom = iconTop + icon.getIntrinsicHeight();
@@ -103,4 +107,7 @@ public class RecyclerItemTouchHelper extends ItemTouchHelper.SimpleCallback {
         background.draw(c);
         icon.draw(c);
     }
+
+
 }
+*/

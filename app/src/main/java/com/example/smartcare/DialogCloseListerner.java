@@ -1,4 +1,4 @@
-package com.example.smartcare.task;
+package com.example.smartcare;
 
 import android.content.DialogInterface;
 

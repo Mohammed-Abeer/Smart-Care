@@ -1,4 +1,5 @@
-package com.example.smartcare.task;
+package com.example.smartcare;
+
 import android.app.Activity;
 import android.content.DialogInterface;
 import android.graphics.Color;
@@ -17,8 +18,9 @@ import androidx.annotation.Nullable;
 import androidx.core.content.ContextCompat;
 
 import com.example.smartcare.R;
-import com.example.smartcare.task.Model.ToDoModel;
-import com.example.smartcare.task.util.DatabaseHandler;
+import com.example.smartcare.DialogCloseListerner;
+import com.example.smartcare.Model.ToDoModel;
+import com.example.smartcare.util.DatabaseHandler;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 
 
@@ -34,8 +36,8 @@ public class AddNewTask extends BottomSheetDialogFragment {
 
     private DatabaseHandler db;
 
-    public static AddNewTask newInstance(){
-        return new AddNewTask();
+    public static com.example.smartcare.AddNewTask newInstance(){
+        return new com.example.smartcare.AddNewTask();
     }
 
     @Override
@@ -124,7 +126,7 @@ public class AddNewTask extends BottomSheetDialogFragment {
     @Override
     public void onDismiss(@NonNull DialogInterface dialog){
         Activity activity = getActivity();
-        if(activity instanceof DialogCloseListerner)
+        if(activity instanceof com.example.smartcare.DialogCloseListerner)
             ((DialogCloseListerner)activity).handleDialogClose(dialog);
     }
 

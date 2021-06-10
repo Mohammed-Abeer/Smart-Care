@@ -31,8 +31,11 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:layout_margin="32dp"
+        android:layout_margin="32dp"/>
+        <!--
         android:backgroundTint="@android:color/holo_green_dark"
-        android:src="@drawable/ic_baseline_add" />
+
+        android:src="@drawable/ic_baseline_add"
+        -->
 
 </RelativeLayout>
