@@ -27,8 +27,14 @@ public class CustomerSignIn extends AppCompatActivity implements View.OnClickLis
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_customer_sign_in);
-        TextView signincustomer = (Button) findViewById(R.id.signincustomer);
-        signincustomer.setOnClickListener(this);
+        Button signincustomer = (Button) findViewById(R.id.signincustomer);
+        signincustomer.setOnClickListener(new View.OnClickListener() {
+                                              @Override
+                                              public void onClick(View v) {
+                                                  customerLogin();
+                                              }
+                                          }
+        );
         editTextEmail = findViewById(R.id.email_c1);
         editTextPassword =findViewById(R.id.password_1);
         progressBar = findViewById(R.id.progress);
@@ -39,9 +45,12 @@ public class CustomerSignIn extends AppCompatActivity implements View.OnClickLis
     @Override
     public void onClick(View view) {
         switch (view.getId()){
+            /*
             case R.id.signincustomer:
                 customerLogin();
                 break;
+
+             */
         }
 
 
@@ -77,7 +86,7 @@ public class CustomerSignIn extends AppCompatActivity implements View.OnClickLis
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
                     //direct to dashboard
-                    startActivity(new Intent(CustomerSignIn.this,CustomerDashboard.class));
+                    startActivity(new Intent(CustomerSignIn.this,Dashboard.class));
 
 
                 }else {

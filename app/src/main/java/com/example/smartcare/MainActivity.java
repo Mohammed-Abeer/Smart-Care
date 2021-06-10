@@ -20,10 +20,34 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button managersignup = findViewById(R.id.managersignup);
 
 
-        customersignin .setOnClickListener(this);
-        customersignup.setOnClickListener(this);
-        managersignin.setOnClickListener(this);
-        managersignup.setOnClickListener(this);
+        customersignin .setOnClickListener(new View.OnClickListener() {
+                                               @Override
+                                               public void onClick(View v) {
+                                                   startActivity(new Intent(MainActivity.this, CustomerSignIn.class));
+                                               }
+                                           }
+                );
+        customersignup.setOnClickListener(new View.OnClickListener() {
+                                              @Override
+                                              public void onClick(View v) {
+                                                  startActivity(new Intent(MainActivity.this, CustomerSignUp.class));
+                                              }
+                                          }
+        );
+        managersignin.setOnClickListener(new View.OnClickListener() {
+                                             @Override
+                                             public void onClick(View v) {
+                                                 startActivity(new Intent(MainActivity.this, ManagerSignIn.class));
+                                             }
+                                         }
+        );
+        managersignup.setOnClickListener(new View.OnClickListener() {
+                                             @Override
+                                             public void onClick(View v) {
+                                                 startActivity(new Intent(MainActivity.this, ManagerSignUp.class));
+                                             }
+                                         }
+        );
 
 
     }
@@ -31,15 +55,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
         switch (view.getId()){
+            /*
             case R.id.customersignup:
                 startActivity(new Intent(this,CustomerSignUp.class));
                 break;
+
             case R.id.customersignin:
+
                 startActivity(new Intent(this,CustomerSignIn.class));
+
             case R.id.managersignup:
+
                 startActivity(new Intent(this,ManagerSignUp.class));
             case R.id.managersignin:
                 startActivity(new Intent(this,ManagerSignIn.class));
+                */
         }
     }
 }

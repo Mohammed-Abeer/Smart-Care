@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+// this is customer dashboard
 public class Dashboard extends AppCompatActivity {
 
     @Override

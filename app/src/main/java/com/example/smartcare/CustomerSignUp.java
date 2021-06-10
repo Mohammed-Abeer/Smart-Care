@@ -31,8 +31,14 @@ public class CustomerSignUp extends AppCompatActivity implements View.OnClickLis
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_customer_sign_up);
         mAuth = FirebaseAuth.getInstance();
-        TextView registerCustomer = (Button) findViewById(R.id.registerCustomer);
-        registerCustomer.setOnClickListener(this);
+        Button registerCustomer = (Button) findViewById(R.id.registerCustomer);
+        registerCustomer.setOnClickListener(new View.OnClickListener() {
+                                               @Override
+                                               public void onClick(View v) {
+                                                   registerCustomer();
+                                               }
+                                           }
+        );
 
         editName = (EditText) findViewById(R.id.name);
         editEmail = (EditText)findViewById(R.id.email);
@@ -47,9 +53,12 @@ public class CustomerSignUp extends AppCompatActivity implements View.OnClickLis
     @Override
     public void onClick(View view) {
         switch (view.getId()){
+           /*
             case R.id.registerCustomer:
                 registerCustomer();
                 break;
+
+            */
         }
 
     }
